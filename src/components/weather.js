@@ -8,7 +8,7 @@ function Myapp() {
     const [search, setSearch] = useState('karachi')
 
     useEffect(() => {
-        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=363a0329911c1b074081245aae1023c3&units=metric`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=3bdac5537eba5fb5dde0c54497d275c1&units=metric`)
             .then(res => {
                 const newWeather = res.data;
                 console.log(newWeather);
